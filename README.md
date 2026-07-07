@@ -26,7 +26,7 @@ Author / 作者：公众号：科技小亮AGI
 - 批量 IP 规划：先建立分类体系、主色系统、角色矩阵，再分批制作
 - 风格一致性检查：从低多边形、色彩、构图、道具、UI 可用性等角度验收
 - 抠图友好约束：角色和主要道具尽量形成一体化连贯轮廓，避免漂浮碎片和零散小元素
-- 新比例约束：以 `assets/proportion-examples/` 中的高挑全身低多边形角色为准，避免短矮 mascot、chibi 大头、短腿或身体过碎
+- 新比例约束：以 `assets/proportion-examples/` 中的自然均衡全身低多边形角色为准，避免瘦长纸片人、长腿模特比例、窄柱状身材、短矮 mascot、chibi 大头或身体过碎
 
 ### 文件结构
 
@@ -52,7 +52,7 @@ mbti-style-skill/
 - `references/planning-guide.md`：单个词或短语的 IP 设计分析流程，例如“夜猫子选手”
 - `references/batch-ip-matrix.md`：大型 IP 项目的分类规划、16 型 MBTI 表、批量矩阵和验收规则
 - `assets/mbti-ip-contact-sheet.jpg`：参考图总览，用于快速对照整体风格
-- `assets/proportion-examples/`：新的比例基准参考图，优先用于控制高挑全身角色比例
+- `assets/proportion-examples/`：新的比例基准参考图，优先用于控制自然均衡的全身角色比例
 - `assets/image-metadata.json`：参考图尺寸和文件索引数据
 
 ### 使用方式
@@ -109,7 +109,7 @@ It is useful when:
 - Batch IP planning: create taxonomy, color systems, character matrices, and production batches
 - Style review: check low-poly geometry, color consistency, props, composition, and UI usability
 - Cutout-friendly design: keep the body and major props as one connected silhouette with minimal loose fragments
-- Updated proportion control: follow the tall full-body low-poly examples in `assets/proportion-examples/`, avoiding short mascots, chibi heads, stubby legs, or fragmented bodies
+- Updated proportion control: follow the balanced natural full-body examples in `assets/proportion-examples/`, avoiding skinny tall bodies, column-like silhouettes, fashion-model legs, short mascots, chibi heads, or fragmented bodies
 
 ### Usage
 

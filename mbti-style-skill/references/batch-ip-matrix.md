@@ -85,7 +85,7 @@ Rules:
 - Do not use more than one dominant hue family per character.
 - For 16 MBTI types, do not assign 16 unrelated colors; group them by temperament, then vary accents.
 - Keep every character cutout-friendly: one connected body mass, attached props, no scattered floating symbols.
-- Keep proportions consistent across the set using the newer examples: tall full-body figure, head and hair about one quarter of total height, strong torso or long coat mass, slim visible arms, long faceted legs, and grounded low-poly shoes.
+- Keep proportions consistent across the set using the examples: natural balanced body shape, overall silhouette height-to-width ratio about 1.5-1.7, broad hair/shoulder/coat or backpack mass, solid torso, natural arms, balanced-length sturdy legs, and grounded low-poly shoes.
 
 ## 16-Type MBTI Planning Grid
 
@@ -135,7 +135,7 @@ Category system:
 6. Reflection and night work: 6 characters, purple/blue-grey, books and lamps.
 
 Next I will build a 36-row matrix with unique names, props, poses, colors, and final prompts.
-Every character will use a connected cutout-friendly silhouette, attached or hand-held props, and consistent tall full-body low-poly proportions matching the proportion examples.
+Every character will use a connected cutout-friendly silhouette, attached or hand-held props, and consistent natural balanced low-poly proportions matching the proportion examples.
 ```
 
 ## Batch Consistency Review
@@ -150,7 +150,7 @@ After every batch, score each item from 1-5:
 | Differentiation | Is it distinct from neighboring characters? |
 | UI usability | Would it work at avatar/result-card size? |
 | Cutout safety | Are the body and major props connected, without scattered fragments? |
-| Proportion fit | Does it match the newer tall full-body proportion examples? |
+| Proportion fit | Does it match the balanced natural proportion examples rather than becoming skinny, column-like, or long-legged? |
 
 If two characters feel too similar, vary in this order: prop, pose, head silhouette, accent color, scene cue.
 If a character feels too fragmented, remove floating icons first, then integrate the symbol into a handheld card, outfit motif, hair accessory, bag, or main prop.

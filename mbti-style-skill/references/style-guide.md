@@ -6,7 +6,7 @@ The reference set is a cohesive low-poly cartoon IP system for MBTI personalitie
 
 Core style sentence:
 
-> A tall full-body low-poly geometric MBTI IP character, one connected cutout-friendly silhouette, faceted paper-cut shapes, angular planes, simple expressive face, white studio background, soft grey oval shadow, bright but restrained palette, vector-clean edges, playful attached or hand-held personality props.
+> A balanced natural full-body low-poly geometric MBTI IP character, one connected cutout-friendly silhouette, faceted paper-cut shapes, angular planes, simple expressive face, white studio background, soft grey oval shadow, bright but restrained palette, vector-clean edges, playful attached or hand-held personality props.
 
 ## Image Set Coverage
 
@@ -14,11 +14,11 @@ The set contains 32 files, 31 unique pixel images. Image 10 and image 11 are exa
 
 Use the contact sheet at `assets/mbti-ip-contact-sheet.jpg` for visual reference.
 
-Use `assets/proportion-examples/` as the current proportion target. These examples supersede the older compact mascot proportion when the two conflict:
+Use `assets/proportion-examples/` as the current body-shape target. These examples are balanced natural full-body characters, not skinny tall figures. They supersede any older mascot proportion wording when the two conflict:
 
-- `DIM02-1-walking-encyclopedia.png`: tall walking scholar, backpack/books integrated with the body.
-- `DIM02-2-curious-collector.png`: tall curious collector, spiky faceted hair, bag attached to torso.
-- `DIM02-3-niche-hobby-black-hole.png`: tall hobby explorer, large handheld prop connected to both hands.
+- `DIM02-1-walking-encyclopedia.png`: balanced walking scholar, broad hair/coat/backpack mass, books integrated with the body.
+- `DIM02-2-curious-collector.png`: balanced curious collector, wide spiky faceted hair, solid torso, bag attached to body.
+- `DIM02-3-niche-hobby-black-hole.png`: balanced hobby explorer, wide hair and coat shape, large handheld prop connected to both hands.
 
 | Index | Content reading | Style notes |
 | --- | --- | --- |
@@ -35,7 +35,7 @@ Use `assets/proportion-examples/` as the current proportion target. These exampl
 | 11 | Duplicate of 10. | Same as above. |
 | 12 | Two-character conversation under tree, with small speech bubble. | Wide scene, tiny figures, simplified tree made of polygon canopy pieces. |
 | 13 | Purple conductor/teacher pointing with baton. | Stern angular face, dark hair wedge, arm extended as strong diagonal. |
-| 14 | Yellow painter/artist with crown-like hair, palette and brush. | Creative archetype; sunny yellow-gold, slim limbs, playful contrapposto. |
+| 14 | Yellow painter/artist with crown-like hair, palette and brush. | Creative archetype; sunny yellow-gold, narrow angular limbs, playful contrapposto. |
 | 15 | Purple scientist holding flask. | Lab coat made of grey/purple diamond panels; glasses; raised arm. |
 | 16 | Green armored knight/guardian holding sword. | Symmetric cloak, stern face, saturated green blocks, fantasy-protector archetype. |
 | 17 | Campfire group scene with four characters. | Low-detail wide vignette; grey stone/stage background; props and color blocks carry recognition. |
@@ -77,17 +77,17 @@ Use `assets/proportion-examples/` as the current proportion target. These exampl
 
 ### Character Proportions
 
-- Match the newer proportion examples: tall full-body low-poly IP character, not the older short compact mascot.
-- Overall body: about 4.5-5.5 heads tall when including hair volume; stylized but closer to a teen/adult full-body figure than a chibi mascot.
-- Head plus hair mass: about 22-28% of total character height. The head is prominent and IP-like, but not oversized.
-- Face area: smaller than the hair mass, usually about 14-18% of total character height.
-- Torso and long coat or upper garment: about 32-42% of height, often forming a strong central connected mass.
-- Legs and shoes: about 38-48% of height, visibly longer than the old mascot references. Pants should have clear faceted planes.
+- Match the proportion examples: natural balanced full-body low-poly IP character, not a skinny tall figure and not a short chibi mascot.
+- Overall silhouette height-to-width ratio: aim for about 1.5-1.7. Never make a narrow column-like figure around 2.0+.
+- Body rhythm: large faceted hair plus face, broad shoulders/coat/backpack, solid torso, natural arms, balanced-length sturdy legs, grounded shoes.
+- Head plus hair mass: about 24-30% of total character height. The hair can be wide and expressive; the face should not become huge.
+- Torso plus coat/backpack/held prop: about 40-50% of visible character height and should create the main visual weight.
+- Legs and shoes: about 32-40% of visible character height. Legs should be faceted and readable, but not overextended, thin, or straight like poles.
 - Feet: solid low-poly sneakers or wedge shoes, wide enough to ground the figure on the oval shadow.
-- Arms: slim but not stick-like; hands are visible and can hold props. Keep arms and props overlapping the torso enough to preserve a connected silhouette.
+- Arms: natural thickness, visible hands, bent elbows when holding props. Keep arms and props overlapping the torso enough to preserve a connected silhouette.
 - Face: minimal dots, short lines, triangle nose plane, tiny mouth. Expression should be readable but not detailed.
 - Hair: large solid faceted mass, often black, grey, yellow, teal, or purple; no strand detail.
-- Avoid compact mascot bodies, stubby legs, tiny torsos, oversized chibi heads, realistic adult anatomy, or sticker-like blob bodies.
+- Avoid narrow bodies, collapsed shoulders, tiny torsos, fashion-model legs, stick-thin limbs, oversized chibi heads, realistic adult anatomy, or sticker-like blob bodies.
 
 ### Line and Edge Treatment
 
@@ -163,13 +163,13 @@ Use these as starting points. Adjust the prop and posture to the user's requeste
 Use this structure for image generation:
 
 ```text
-Create a [format] of a [MBTI type or personality role] as a low-poly geometric cartoon IP character. The character is [pose/personality], wearing [simple faceted outfit], holding or wearing [one or two attached props]. Keep the figure and major props as one connected, cutout-friendly full-body silhouette. Match the newer proportion examples: tall full-body figure, head and hair about one quarter of total height, strong torso or long coat mass, slim visible arms, long faceted legs, and grounded low-poly shoes. Use crisp angular polygon planes, faceted hair and clothing, simple dot-and-line facial features, no thick outlines, flat vector-like shading, [dominant palette] with muted grey and warm skin tones, centered on a white background with a soft grey oval shadow. Make it look like a reusable MBTI app character, playful but clean, minimal scene detail.
+Create a [format] of a [MBTI type or personality role] as a low-poly geometric cartoon IP character. The character is [pose/personality], wearing [simple faceted outfit], holding or wearing [one or two attached props]. Keep the figure and major props as one connected, cutout-friendly full-body silhouette. Match the proportion examples: natural balanced body shape, overall silhouette height-to-width ratio about 1.5-1.7, wide faceted hair and shoulder/coat mass, solid torso, natural arms with visible hands, balanced-length sturdy faceted legs, and grounded low-poly shoes. Use crisp angular polygon planes, faceted hair and clothing, simple dot-and-line facial features, no thick outlines, flat vector-like shading, [dominant palette] with muted grey and warm skin tones, centered on a white background with a soft grey oval shadow. Make it look like a reusable MBTI app character, playful but clean, minimal scene detail.
 ```
 
 Add a negative style clause when using image generation:
 
 ```text
-Avoid photorealism, anime style, watercolor, oil paint, complex texture, thick black outline, glossy 3D render, realistic human anatomy, detailed background, heavy shadow, neon colors, text labels, logos, compact mascot proportions, overly cute chibi proportions, oversized heads, tiny torsos, stubby legs, scattered floating icons, detached tiny props, confetti-like fragments, and many separate elements around the body.
+Avoid photorealism, anime style, watercolor, oil paint, complex texture, thick black outline, glossy 3D render, realistic human anatomy, detailed background, heavy shadow, neon colors, text labels, logos, skinny tall body, narrow column silhouette, fashion-model legs, stick-thin legs, tiny torso, collapsed shoulders, compact mascot proportions, overly cute chibi proportions, oversized heads, stubby legs, scattered floating icons, detached tiny props, confetti-like fragments, and many separate elements around the body.
 ```
 
 ## Example Prompts
@@ -177,19 +177,19 @@ Avoid photorealism, anime style, watercolor, oil paint, complex texture, thick b
 INTJ strategist:
 
 ```text
-Create a square avatar of an INTJ strategist as a low-poly geometric cartoon IP character. The character stands calmly with one hand to the chin and the other holding a small angular chart tablet close to the body. Keep the full figure and tablet as one connected, cutout-friendly silhouette with the newer tall full-body proportions: head and hair about one quarter of total height, strong coat-like torso, slim visible arms, long faceted legs, and grounded low-poly shoes. Use a deep olive robe with dark green and grey polygon facets, black faceted hair, simple focused dot-and-line face, crisp angular planes, no thick outlines, flat vector-like shading, centered on a white background with a soft grey oval shadow. Make it look like a reusable MBTI app character, thoughtful and precise.
+Create a square avatar of an INTJ strategist as a low-poly geometric cartoon IP character. The character stands calmly with one hand to the chin and the other holding a small angular chart tablet close to the body. Keep the full figure and tablet as one connected, cutout-friendly silhouette with balanced natural proportions: overall silhouette height-to-width ratio about 1.5-1.7, wide faceted hair and shoulders, strong coat-like torso, natural arms, balanced-length sturdy faceted legs, and grounded low-poly shoes. Use a deep olive robe with dark green and grey polygon facets, black faceted hair, simple focused dot-and-line face, crisp angular planes, no thick outlines, flat vector-like shading, centered on a white background with a soft grey oval shadow. Make it look like a reusable MBTI app character, thoughtful and precise.
 ```
 
 ENFP creator:
 
 ```text
-Create a square avatar of an ENFP creator as a low-poly geometric cartoon IP character. The character leans forward in a lively diagonal pose, holding one microphone close to the body, with a butterfly motif integrated into the clothing or hair instead of floating separately. Keep the full figure as one connected, cutout-friendly silhouette with the newer tall full-body proportions: head and hair about one quarter of total height, long coat or jacket shape, slim visible arms, long faceted legs, and grounded shoes. Use sunny yellow, lime green, and teal accent polygon planes, faceted crown-like hair, simple smiling face, crisp angular vector edges, white background, and a soft grey oval ground shadow. Keep the character playful, expressive, and icon-readable.
+Create a square avatar of an ENFP creator as a low-poly geometric cartoon IP character. The character leans forward in a lively diagonal pose, holding one microphone close to the body, with a butterfly motif integrated into the clothing or hair instead of floating separately. Keep the full figure as one connected, cutout-friendly silhouette with balanced natural proportions: wide faceted hair, broad jacket shape, solid torso, natural arms, balanced-length sturdy faceted legs, grounded shoes, and overall silhouette height-to-width ratio about 1.5-1.7. Use sunny yellow, lime green, and teal accent polygon planes, faceted crown-like hair, simple smiling face, crisp angular vector edges, white background, and a soft grey oval ground shadow. Keep the character playful, expressive, and icon-readable.
 ```
 
 ISFJ helper:
 
 ```text
-Create a square avatar of an ISFJ helper as a low-poly geometric cartoon IP character. The character wears a teal nurse-inspired cap and simple faceted jacket, holding a small clipboard against the torso so the prop stays connected to the body. Keep the newer tall full-body proportions: head and hair about one quarter of total height, strong torso mass, slim visible arms, long faceted legs, and grounded low-poly shoes. Use muted teal, light cyan, soft grey, warm skin tones, flat angular polygon shading, tiny line facial details, no thick outlines, centered on white with a faint grey oval shadow. The mood is calm, reliable, and kind.
+Create a square avatar of an ISFJ helper as a low-poly geometric cartoon IP character. The character wears a teal nurse-inspired cap and simple faceted jacket, holding a small clipboard against the torso so the prop stays connected to the body. Keep balanced natural proportions: wide head/hair/cap mass, broad shoulders, solid torso, natural arms, balanced-length sturdy faceted legs, grounded low-poly shoes, and overall silhouette height-to-width ratio about 1.5-1.7. Use muted teal, light cyan, soft grey, warm skin tones, flat angular polygon shading, tiny line facial details, no thick outlines, centered on white with a faint grey oval shadow. The mood is calm, reliable, and kind.
 ```
 
 Group scene:
@@ -204,7 +204,7 @@ Before finalizing an output, verify:
 
 - The image is immediately recognizable as low-poly or faceted.
 - The character and major props form one connected, cutout-friendly silhouette.
-- The proportions match the newer examples: tall full-body figure, controlled large head, strong torso or long coat, long faceted legs, grounded shoes.
+- The proportions match the examples: natural full-body figure, overall silhouette height-to-width ratio about 1.5-1.7, broad hair/shoulders/coat mass, solid torso, natural arms, balanced-length sturdy legs, grounded shoes.
 - The silhouette is angular and asymmetric.
 - The face is simple: eyes, nose plane, mouth line, minimal eyebrows.
 - The character uses one dominant color family with 3-5 tonal facets.
@@ -219,7 +219,7 @@ Before finalizing an output, verify:
 
 - Too round or chibi: sharpen the head, hair, clothing, hands, and feet into polygon planes.
 - Too fragmented: remove floating icons and loose props; attach symbols to clothing, hair, a handheld card, or a single prop.
-- Wrong proportions: reduce oversized chibi heads, lengthen stubby legs, strengthen the torso or coat mass, and return to the newer tall full-body proportion examples.
+- Wrong proportions: if the figure looks skinny, column-like, or too long-legged, widen the hair/shoulders/coat/backpack mass, strengthen the torso, shorten and thicken the legs, and return to the 1.5-1.7 silhouette ratio of the proportion examples.
 - Too realistic: flatten shading, simplify face, remove anatomy details.
 - Too busy: remove extra props, background objects, and text.
 - Too modern flat-icon: add faceted light/dark planes to clothing, hair, and props.
