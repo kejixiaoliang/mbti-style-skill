@@ -1,6 +1,6 @@
 # MBTI Style Skill
 
-一个用于复刻指定 MBTI IP 形象视觉语言的 Codex Skill。它基于本项目中的参考形象分析，沉淀出低多边形、几何切面、UI 友好角色插画的完整风格规范，方便后续生成同风格 MBTI 人设、头像、吉祥物和小场景插画。
+一个用于规划并制作 MBTI IP 形象的 Codex Skill。它不是简单的“同风格生图提示词”，而是先把用户给出的一个词、几个词或一组主题，分析成清晰的 IP 设计逻辑，再生成符合 MBTI 低多边形风格的角色提示词和批量设计矩阵。
 
 Author / 作者：公众号：科技小亮AGI
 
@@ -8,44 +8,25 @@ Author / 作者：公众号：科技小亮AGI
 
 ### 这个项目是什么
 
-`mbti-style-skill` 是一个面向 Codex 的风格型 Skill，用于指导 AI 生成同一套 MBTI IP 视觉风格的形象。Skill 内包含：
+`mbti-style-skill` 是一个面向 Codex 的 MBTI IP 角色规划与风格生成 Skill。它基于参考形象总结出低多边形、几何切面、白底轻投影、UI 友好角色插画的视觉规则，并新增了“先规划，再制作”的工作流。
 
-- `SKILL.md`：Skill 触发说明、使用流程和输出规则
-- `references/style-guide.md`：完整风格分析，包括角色比例、低多边形几何语言、色彩、线条、阴影、构图、UI 使用边界、MBTI 类型到视觉 archetype 的映射
-- `assets/mbti-ip-contact-sheet.jpg`：参考图总览，用于快速对照整体风格
-- `assets/image-metadata.json`：参考图尺寸和文件索引数据
-- `agents/openai.yaml`：Codex UI 元数据
+适合这些场景：
 
-### 风格关键词
+- 用户只发一个词或短语，例如“夜猫子选手”“职场显眼包”“冷静观察者”
+- 需要先分析词语，再转译成 IP 角色设定
+- 需要为单个 MBTI 类型生成头像、贴纸或角色设定
+- 需要规划包含多个分类、几十个 IP 的大型角色体系
+- 需要批量输出每个 IP 的主色、道具、姿态、构图和最终提示词
 
-- 低多边形几何卡通
-- faceted paper-cut / 纸雕切面感
-- 白底、轻投影、UI 友好
-- 简化五官、夸张姿态、强道具识别
-- 绿色、青色、紫色、黄色为主的 MBTI 性格色彩体系
-- 适合头像、结果卡、onboarding 插画、贴纸、IP 角色设定
+### 核心能力
 
-### 使用方式
+- 短词语义分析：从一个词推导情绪、人格气质、视觉隐喻和角色定位
+- MBTI 风格转译：把抽象人格变成低多边形 IP 角色语言
+- 单角色提示词生成：输出结构化方案、最终 prompt 和 negative prompt
+- 批量 IP 规划：先建立分类体系、主色系统、角色矩阵，再分批制作
+- 风格一致性检查：从低多边形、色彩、构图、道具、UI 可用性等角度验收
 
-在 Codex 中调用：
-
-```text
-Use $mbti-style-skill to create an ENFP creator avatar in the same MBTI low-poly IP style.
-```
-
-或提出中文需求：
-
-```text
-使用 $mbti-style-skill，帮我做一个同风格的 INTJ 策略家头像。
-```
-
-如果手动安装，把 `mbti-style-skill/` 文件夹复制到 Codex skills 目录，例如：
-
-```text
-C:\Users\<your-user>\.codex\skills\mbti-style-skill
-```
-
-### 目录结构
+### 文件结构
 
 ```text
 mbti-style-skill/
@@ -57,41 +38,85 @@ mbti-style-skill/
     mbti-ip-contact-sheet.jpg
   references/
     style-guide.md
+    planning-guide.md
+    batch-ip-matrix.md
+```
+
+### 主要文件
+
+- `SKILL.md`：Skill 入口、触发条件、任务分流和输出规则
+- `references/style-guide.md`：完整视觉风格分析，包括几何、色彩、线条、阴影、构图和 MBTI archetype
+- `references/planning-guide.md`：单个词或短语的 IP 设计分析流程，例如“夜猫子选手”
+- `references/batch-ip-matrix.md`：大型 IP 项目的分类规划、16 型 MBTI 表、批量矩阵和验收规则
+- `assets/mbti-ip-contact-sheet.jpg`：参考图总览，用于快速对照整体风格
+- `assets/image-metadata.json`：参考图尺寸和文件索引数据
+
+### 使用方式
+
+在 Codex 中调用：
+
+```text
+Use $mbti-style-skill，帮我分析“夜猫子选手”，先规划 IP 形象，再写出最终生图提示词。
+```
+
+大型项目示例：
+
+```text
+Use $mbti-style-skill，帮我规划 36 个职场人格 IP。先做分类、主色、角色矩阵和每个 IP 的提示词，不要直接生图。
+```
+
+单个 MBTI 类型示例：
+
+```text
+Use $mbti-style-skill to design an INTJ strategist avatar. First analyze the role, then write the final image prompt.
+```
+
+### 安装方式
+
+把 `mbti-style-skill/` 文件夹复制到 Codex skills 目录，例如：
+
+```text
+C:\Users\<your-user>\.codex\skills\mbti-style-skill
 ```
 
 ### 注意
 
-本仓库提交的是整理后的 Skill 成品和必要参考索引，不包含手机原始图片素材目录。后续生成图片时，应使用 Skill 中总结的风格规则，而不是逐像素复制原图。
+本仓库提交的是整理后的 Skill 成品和必要参考索引，不包含手机原始图片素材目录。后续生成图片时，应使用 Skill 中总结的风格规则和规划流程，而不是逐像素复制原图。
 
 ## English
 
 ### What This Project Is
 
-`mbti-style-skill` is a Codex Skill for creating MBTI-style IP characters and mascot illustrations in a consistent low-poly visual language. It turns a local reference image set into a reusable style guide for generating matching MBTI avatars, character concepts, stickers, result-card illustrations, and small UI scenes.
+`mbti-style-skill` is a Codex Skill for planning and creating MBTI-style IP characters. It does more than write same-style image prompts: it first analyzes a keyword, phrase, MBTI type, or large theme into a clear IP design logic, then produces structured character plans, prompt matrices, and low-poly visual prompts.
 
-Included files:
+It is useful when:
 
-- `SKILL.md`: trigger description, workflow, and output rules
-- `references/style-guide.md`: full visual analysis covering geometry, color, linework, shadows, composition, UI usage, and MBTI archetype mapping
-- `assets/mbti-ip-contact-sheet.jpg`: visual contact sheet for fast style comparison
-- `assets/image-metadata.json`: source image index and dimensions
-- `agents/openai.yaml`: Codex UI metadata
+- The user provides only one keyword or a short phrase
+- A concept needs to be translated into an IP character before image generation
+- A single MBTI avatar, sticker, or character sheet is needed
+- A large set of categorized IP characters needs planning
+- Dozens of characters need consistent colors, props, poses, and prompts
 
-### Style Keywords
+### Core Capabilities
 
-- Low-poly geometric cartoon
-- Faceted paper-cut character shapes
-- White background, soft ground shadow, UI-friendly composition
-- Minimal facial features, expressive posture, readable props
-- Green, teal, purple, and yellow MBTI-inspired color families
-- Suitable for avatars, result cards, onboarding illustrations, stickers, and character IP design
+- Short keyword analysis: infer mood, personality direction, visual metaphor, and role
+- MBTI visual translation: turn abstract personality into low-poly IP design language
+- Single-character prompt planning: output design logic, final prompt, and negative prompt
+- Batch IP planning: create taxonomy, color systems, character matrices, and production batches
+- Style review: check low-poly geometry, color consistency, props, composition, and UI usability
 
 ### Usage
 
 Invoke it in Codex:
 
 ```text
-Use $mbti-style-skill to create an INTJ strategist avatar in the same MBTI low-poly IP style.
+Use $mbti-style-skill to analyze "night owl player", plan the IP character, then write the final image prompt.
+```
+
+Large project example:
+
+```text
+Use $mbti-style-skill to plan 36 workplace personality IP characters. Create categories, color rules, a character matrix, and prompts before generating images.
 ```
 
 Manual installation:
@@ -102,4 +127,4 @@ C:\Users\<your-user>\.codex\skills\mbti-style-skill
 
 ### Note
 
-This repository contains the finished reusable Skill and its compact reference assets. It does not include the original phone image folder. Generated outputs should follow the extracted style system rather than directly copying any source image.
+This repository contains the finished reusable Skill and its compact reference assets. It does not include the original phone image folder. Generated outputs should follow the extracted style system and planning workflow rather than directly copying any source image.

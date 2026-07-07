@@ -1,4 +1,4 @@
 interface:
   display_name: "MBTI Style Skill"
-  short_description: "Create MBTI IP characters in the analyzed low-poly style."
-  default_prompt: "Use $mbti-style-skill to create a new MBTI IP character in the same low-poly visual style."
+  short_description: "Plan prompts and create MBTI IP characters in a low-poly style."
+  default_prompt: "Use $mbti-style-skill to analyze this keyword, plan the IP design, then create a low-poly MBTI character prompt."
