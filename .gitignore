@@ -1,0 +1,7 @@
+# Local source images and intermediate analysis outputs are not part of the public skill package.
+MBTI-IP-Image/
+analysis-output/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
