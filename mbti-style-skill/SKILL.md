@@ -21,12 +21,14 @@ Read the minimum reference needed for the task:
 
 Use `assets/mbti-ip-contact-sheet.jpg` as the visual index when quick comparison is useful. Use `assets/image-metadata.json` only when exact file names, sizes, or dimensions are needed.
 
+Use `assets/proportion-examples/` as the current proportion target. If older compact mascot proportions conflict with these examples, follow the newer proportion examples.
+
 ## Workflow
 
 1. Classify the task as a single keyword/concept, a single named MBTI type, a small scene, or a batch IP system.
 2. Analyze the user's words before making anything: infer mood, personality direction, visual metaphors, props, posture, palette, and unsuitable elements.
 3. Produce a concise structured plan. For batch work, produce a category system and IP matrix first; do not generate images until the plan is clear or the user asks to proceed.
-4. Translate the plan into one or more final prompts using the templates in `references/planning-guide.md` or `references/batch-ip-matrix.md`. Always include connected-silhouette and official-proportion constraints.
+4. Translate the plan into one or more final prompts using the templates in `references/planning-guide.md` or `references/batch-ip-matrix.md`. Always include connected-silhouette and tall full-body proportion constraints from the proportion examples.
 5. Create or instruct the next production step only after the design logic is explicit.
 6. Check the result against the quality checklist in `references/style-guide.md`: angular low-poly planes, flat vector-like rendering, simple facial features, white background, soft ground shadow, asymmetric pose, and readable props.
 
@@ -35,7 +37,7 @@ Use `assets/mbti-ip-contact-sheet.jpg` as the visual index when quick comparison
 - For vague inputs, show the analysis and final prompt before producing the image unless the user explicitly asks for direct generation.
 - For large sets, plan the taxonomy, colors, silhouettes, props, and prompt matrix before making assets.
 - Keep each character and its major props as one connected, cutout-friendly silhouette; avoid scattered floating icons, detached small decorations, and many separate pieces.
-- Match the official reference proportions: controlled large faceted head, compact torso, slim angular limbs, and small wedge feet. Avoid chibi heads, realistic long limbs, and blob-like bodies.
+- Match the newer proportion examples: tall full-body low-poly character, head with hair about one quarter of body height, long coat or torso mass, slim but substantial limbs, visible hands, long legs, and grounded shoes. Avoid compact mascot bodies, chibi heads, stubby legs, realistic anatomy, and blob-like bodies.
 - Prefer square 1:1 images for single characters; use 4:3 or wide formats only for scenes.
 - Keep backgrounds minimal: white or near-white, with only light grey stage shapes or simple geometric environment pieces.
 - Make characters feel like MBTI IP icons: readable at small size, expressive through posture and props, not through complex facial rendering.
