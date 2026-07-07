@@ -27,6 +27,7 @@ Pose:
 Props:
 Scene elements:
 Composition:
+Cutout/proportion plan:
 Do not include:
 Final image prompt:
 Negative prompt:
@@ -43,6 +44,7 @@ Analyze the phrase through five lenses:
 3. Personality direction: Which MBTI temperament or archetype does it imply?
 4. Visual symbols: Which 2-4 props or shapes can make it readable at small size?
 5. Style translation: How to express it with low-poly geometry, white background, restrained color, and simple UI-friendly composition?
+6. Cutout safety: Which elements should be attached, held, worn, or integrated so the character is not fragmented?
 
 Avoid over-explaining the psychology. The final design must be visually usable.
 
@@ -80,7 +82,7 @@ Character role:
 A late-night MBTI strategist or creator who keeps working under a small lamp.
 
 Visual metaphor:
-Moon icon, small desk lamp, coffee cup, sleepy square glasses, angular messy hair, tiny clock showing late night.
+Coffee cup, sleepy square glasses, angular messy hair, moon motif on clothing or a handheld card, warm lamp-like accent on the outfit.
 
 Dominant color:
 Muted purple and blue-grey night palette.
@@ -98,22 +100,25 @@ Pose:
 One hand holding a coffee cup, the other holding a small laptop or notebook; shoulders slightly hunched but still upright.
 
 Props:
-Coffee cup, mini lamp, moon icon, small clock. Use at most three in the final image.
+Coffee cup and notebook held close to the body; optional moon motif integrated on the notebook cover or clothing. Avoid separate floating icons.
 
 Scene elements:
-White background with a small dark polygon window or moon symbol only; avoid a complex room.
+White background only, or one very small moon cue attached to the notebook. Avoid a complex room.
 
 Composition:
 Square avatar, centered figure, soft grey oval shadow, character occupying 70-80% height.
 
+Cutout/proportion plan:
+Keep the head, hair, torso, arms, legs, coffee cup, and notebook as one connected silhouette. Match the official MBTI mascot proportions: controlled large faceted head, compact torso, slim angular limbs, small wedge feet.
+
 Do not include:
-Real owl, detailed bedroom, neon cyberpunk lighting, messy full desk, readable text, realistic tired face.
+Real owl, detailed bedroom, neon cyberpunk lighting, messy full desk, readable text, realistic tired face, floating moon/stars, detached tiny clocks, scattered paper fragments.
 
 Final image prompt:
-Create a square avatar of a "夜猫子选手" as a low-poly geometric MBTI IP mascot. The character is a late-night thinker, standing slightly hunched but determined, holding a small coffee cup and a tiny angular notebook. Use faceted purple-black messy hair, simple sleepy dot eyes behind cyan square glasses, a muted purple and blue-grey outfit with warm yellow lamp accents, crisp polygon planes, flat vector-like shading, no thick outlines, centered on a white background with a small moon icon and a soft grey oval shadow. Make it playful, focused, and readable as a reusable MBTI app avatar.
+Create a square avatar of a "夜猫子选手" as a low-poly geometric MBTI IP mascot. The character is a late-night thinker, standing slightly hunched but determined, holding a small coffee cup and a tiny angular notebook close to the torso. Keep the head, torso, arms, legs, cup, and notebook as one connected, cutout-friendly full-body silhouette. Match the official MBTI mascot proportions: controlled large faceted head, compact torso, slim angular limbs, and small wedge feet. Use faceted purple-black messy hair, simple sleepy dot eyes behind cyan square glasses, a muted purple and blue-grey outfit with warm yellow lamp accents, crisp polygon planes, flat vector-like shading, no thick outlines, centered on a white background with a soft grey oval shadow. Add any moon cue only as a small motif on the notebook or outfit, not as a floating object. Make it playful, focused, and readable as a reusable MBTI app avatar.
 
 Negative prompt:
-Avoid photorealism, anime, literal owl character, complex bedroom background, neon cyberpunk style, glossy 3D render, thick black outline, detailed facial wrinkles, messy desk clutter, text labels, and overly cute chibi proportions.
+Avoid photorealism, anime, literal owl character, complex bedroom background, neon cyberpunk style, glossy 3D render, thick black outline, detailed facial wrinkles, messy desk clutter, text labels, overly cute chibi proportions, oversized head, long realistic limbs, floating moon or stars, detached clocks, scattered papers, and separate tiny props around the body.
 ```
 
 ## Prompt Templates
@@ -121,13 +126,13 @@ Avoid photorealism, anime, literal owl character, complex bedroom background, ne
 ### Single Avatar
 
 ```text
-Create a square avatar of [concept name] as a low-poly geometric MBTI IP mascot. The character is [role/personality], [pose], wearing [faceted outfit]. Use [dominant palette] with [accent color], faceted hair and clothing, simple dot-and-line facial features, crisp angular polygon planes, flat vector-like shading, no thick outlines, centered on a white background with a soft grey oval shadow. Add [1-3 readable props]. Make it [mood words] and readable as a reusable MBTI app avatar.
+Create a square avatar of [concept name] as a low-poly geometric MBTI IP mascot. The character is [role/personality], [pose], wearing [faceted outfit]. Keep the figure and major props as one connected, cutout-friendly full-body silhouette. Match the official MBTI mascot proportions: controlled large faceted head, compact torso, slim angular limbs, and small wedge feet. Use [dominant palette] with [accent color], faceted hair and clothing, simple dot-and-line facial features, crisp angular polygon planes, flat vector-like shading, no thick outlines, centered on a white background with a soft grey oval shadow. Add [1-2 readable props] that are held, worn, strapped, or integrated into the outfit. Make it [mood words] and readable as a reusable MBTI app avatar.
 ```
 
 ### Small Scene
 
 ```text
-Create a 4:3 low-poly geometric MBTI IP scene for [concept]. Show [1-4 characters] doing [action] with [key props]. Use simple polygon environment pieces, a white or near-white background, soft grey floor shadows, faceted clothing and hair, minimal facial features, and a restrained palette of [colors]. Keep the scene sparse, UI-friendly, and readable at thumbnail size.
+Create a 4:3 low-poly geometric MBTI IP scene for [concept]. Show [1-4 characters] doing [action] with [key props]. Each character should remain a connected, cutout-friendly silhouette with attached or hand-held props and official MBTI mascot-like proportions. Use simple polygon environment pieces, a white or near-white background, soft grey floor shadows, faceted clothing and hair, minimal facial features, and a restrained palette of [colors]. Keep the scene sparse, UI-friendly, and readable at thumbnail size.
 ```
 
 ### Character Sheet
@@ -144,6 +149,8 @@ Before producing a final prompt, confirm:
 - The role has a readable MBTI temperament or archetype.
 - The design uses one dominant color family and one accent.
 - Props are limited and symbolic.
+- Props are attached, worn, held, or integrated so the image is easy to cut out.
+- The character proportions match the official reference: controlled large head, compact torso, slim limbs, small feet.
 - The background is minimal enough for UI use.
 - The prompt contains the visual style constraints from `style-guide.md`.
 - The negative prompt blocks the most likely style drift.

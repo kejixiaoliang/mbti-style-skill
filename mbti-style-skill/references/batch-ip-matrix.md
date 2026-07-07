@@ -8,7 +8,7 @@ Use this guide when the user asks for a large set of IP characters, multiple cat
 2. Create a category taxonomy before designing characters.
 3. Assign each category a visual role, dominant color family, silhouette rule, and prop language.
 4. Build an IP matrix with one row per character.
-5. Check for repetition: no two adjacent characters should share the same main prop, pose, and head shape.
+5. Check for repetition and cutout safety: no two adjacent characters should share the same main prop, pose, and head shape; no character should rely on many floating or detached pieces.
 6. Write final prompts only after the matrix is coherent.
 7. Generate or hand off in batches of 4-8 characters, then run a consistency review before continuing.
 
@@ -31,6 +31,7 @@ Category system:
    Accent color:
    Shared silhouette:
    Prop language:
+   Cutout rule:
    Forbidden overlap:
 ```
 
@@ -38,8 +39,8 @@ Category system:
 
 Use this table for every character:
 
-| ID | Name | Keywords | MBTI direction | Category | Main color | Accent | Silhouette | Expression | Pose | Props | Scene cue | Prompt status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ID | Name | Keywords | MBTI direction | Category | Main color | Accent | Silhouette | Expression | Pose | Props | Cutout/proportion rule | Scene cue | Prompt status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Then expand each row into:
 
@@ -57,6 +58,7 @@ Outfit geometry:
 Expression:
 Pose:
 Props:
+Cutout/proportion rule:
 Background cue:
 Avoid:
 Final prompt:
@@ -82,6 +84,8 @@ Rules:
 - Vary accent colors and props to prevent sameness.
 - Do not use more than one dominant hue family per character.
 - For 16 MBTI types, do not assign 16 unrelated colors; group them by temperament, then vary accents.
+- Keep every character cutout-friendly: one connected body mass, attached props, no scattered floating symbols.
+- Keep proportions consistent across the set: controlled large faceted head, compact torso, slim angular limbs, and small wedge feet.
 
 ## 16-Type MBTI Planning Grid
 
@@ -131,6 +135,7 @@ Category system:
 6. Reflection and night work: 6 characters, purple/blue-grey, books and lamps.
 
 Next I will build a 36-row matrix with unique names, props, poses, colors, and final prompts.
+Every character will use a connected cutout-friendly silhouette, attached or hand-held props, and consistent official MBTI mascot-like proportions.
 ```
 
 ## Batch Consistency Review
@@ -144,5 +149,8 @@ After every batch, score each item from 1-5:
 | Set consistency | Does it belong to the same family as the others? |
 | Differentiation | Is it distinct from neighboring characters? |
 | UI usability | Would it work at avatar/result-card size? |
+| Cutout safety | Are the body and major props connected, without scattered fragments? |
+| Proportion fit | Does it match the compact official MBTI mascot proportion system? |
 
 If two characters feel too similar, vary in this order: prop, pose, head silhouette, accent color, scene cue.
+If a character feels too fragmented, remove floating icons first, then integrate the symbol into a handheld card, outfit motif, hair accessory, bag, or main prop.

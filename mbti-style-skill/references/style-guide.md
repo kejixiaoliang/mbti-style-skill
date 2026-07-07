@@ -6,7 +6,7 @@ The reference set is a cohesive low-poly cartoon IP system for MBTI personalitie
 
 Core style sentence:
 
-> A flat low-poly geometric cartoon MBTI mascot, faceted paper-cut shapes, angular planes, simple expressive face, white studio background, soft grey oval shadow, bright but restrained palette, vector-clean edges, playful personality props.
+> A flat low-poly geometric cartoon MBTI mascot, one connected full-body silhouette, faceted paper-cut shapes, angular planes, simple expressive face, white studio background, soft grey oval shadow, bright but restrained palette, vector-clean edges, playful attached or hand-held personality props.
 
 ## Image Set Coverage
 
@@ -60,14 +60,25 @@ Use the contact sheet at `assets/mbti-ip-contact-sheet.jpg` for visual reference
 - Make the head a faceted rectangular or pentagonal volume, not a round cartoon head.
 - Use asymmetry: angled shoulders, one raised arm, tilted head, diagonal prop, or stepping foot.
 
+### Connected Silhouette and Cutout Safety
+
+- Design the main figure as one connected, cutout-friendly silhouette. The head, hair, torso, arms, legs, feet, clothing, and main prop should visually touch or overlap.
+- Prefer props that are held, worn, strapped, carried, leaned against the body, or integrated into clothing. Examples: cup in hand, bag on shoulder, goggles on head, clipboard under arm, brush in hand.
+- Avoid scattered floating fragments around the character. Do not use many separate stars, icons, bubbles, confetti pieces, loose papers, tiny clocks, or detached decorative shapes.
+- If a concept needs an icon such as a moon, star, chart, or speech bubble, attach it to a prop, put it on clothing, place it on a single handheld card, or keep one small background cue close to the body.
+- For later background removal, keep the character and major props as one contiguous mass with clear outside edges.
+- Do not create thin detached accessories that would be difficult to select or cut out.
+
 ### Character Proportions
 
-- Head: large, about 25-35% of total body height for single figures.
-- Body: compact torso with angular clothing panels.
-- Limbs: thin, straight, slightly bent rods or tapered wedges.
-- Feet: small triangular shoes or short block forms.
+- Match the official reference proportions: compact full-body mascot, not chibi and not realistic human.
+- Head: large but controlled, about 25-32% of total body height for single figures.
+- Body: compact torso with angular clothing panels, about 32-40% of total height.
+- Legs and feet: together about 25-35% of total height; feet are small triangular shoes or short block forms.
+- Arms: thin, straight, slightly bent rods or tapered wedges, kept close enough to the torso or props to preserve a connected silhouette.
 - Face: minimal dots, short lines, triangle nose plane, tiny mouth. Expression should be readable but not detailed.
 - Hair: large solid faceted mass, often black, grey, yellow, teal, or purple; no strand detail.
+- Avoid oversize heads, tiny bodies, overly long limbs, realistic adult proportions, or sticker-like blob bodies.
 
 ### Line and Edge Treatment
 
@@ -112,6 +123,7 @@ Palette rules:
 - Grounding shadow should sit below the feet, not become a platform.
 - Small scenes: use a 4:3 or wide canvas, keep environment objects simple and low-detail.
 - Props should be readable silhouettes: microphone, brush, palette, wand, ruler, laptop, chalkboard, bag, sword, umbrella, locker, flask.
+- Props should stay connected to the character whenever possible. Prefer one or two strong attached props over multiple separate symbolic objects.
 - Use tiny speech/thought bubbles sparingly and avoid readable text unless requested.
 
 ### UI Design Implications
@@ -142,13 +154,13 @@ Use these as starting points. Adjust the prop and posture to the user's requeste
 Use this structure for image generation:
 
 ```text
-Create a [format] of a [MBTI type or personality role] as a low-poly geometric cartoon IP mascot. The character is [pose/personality], wearing [simple faceted outfit], holding [one or two props]. Use crisp angular polygon planes, faceted hair and clothing, simple dot-and-line facial features, no thick outlines, flat vector-like shading, [dominant palette] with muted grey and warm skin tones, centered on a white background with a soft grey oval shadow. Make it look like a reusable MBTI app avatar, playful but clean, minimal scene detail.
+Create a [format] of a [MBTI type or personality role] as a low-poly geometric cartoon IP mascot. The character is [pose/personality], wearing [simple faceted outfit], holding or wearing [one or two attached props]. Keep the figure and major props as one connected, cutout-friendly full-body silhouette with official MBTI mascot-like proportions: large but controlled faceted head, compact torso, slim angular limbs, and small wedge feet. Use crisp angular polygon planes, faceted hair and clothing, simple dot-and-line facial features, no thick outlines, flat vector-like shading, [dominant palette] with muted grey and warm skin tones, centered on a white background with a soft grey oval shadow. Make it look like a reusable MBTI app avatar, playful but clean, minimal scene detail.
 ```
 
 Add a negative style clause when using image generation:
 
 ```text
-Avoid photorealism, anime style, watercolor, oil paint, complex texture, thick black outline, glossy 3D render, realistic human anatomy, detailed background, heavy shadow, neon colors, text labels, logos, and overly cute chibi proportions.
+Avoid photorealism, anime style, watercolor, oil paint, complex texture, thick black outline, glossy 3D render, realistic human anatomy, detailed background, heavy shadow, neon colors, text labels, logos, overly cute chibi proportions, oversized heads, long realistic limbs, scattered floating icons, detached tiny props, confetti-like fragments, and many separate elements around the body.
 ```
 
 ## Example Prompts
@@ -156,19 +168,19 @@ Avoid photorealism, anime style, watercolor, oil paint, complex texture, thick b
 INTJ strategist:
 
 ```text
-Create a square avatar of an INTJ strategist as a low-poly geometric cartoon IP mascot. The character stands calmly with one hand to the chin and the other holding a small angular chart tablet. Use a deep olive robe with dark green and grey polygon facets, black faceted hair, simple focused dot-and-line face, crisp angular planes, no thick outlines, flat vector-like shading, centered on a white background with a soft grey oval shadow. Make it look like a reusable MBTI app avatar, thoughtful and precise.
+Create a square avatar of an INTJ strategist as a low-poly geometric cartoon IP mascot. The character stands calmly with one hand to the chin and the other holding a small angular chart tablet close to the body. Keep the full figure and tablet as one connected, cutout-friendly silhouette with official MBTI mascot-like proportions: controlled large faceted head, compact torso, slim angular limbs, and small wedge feet. Use a deep olive robe with dark green and grey polygon facets, black faceted hair, simple focused dot-and-line face, crisp angular planes, no thick outlines, flat vector-like shading, centered on a white background with a soft grey oval shadow. Make it look like a reusable MBTI app avatar, thoughtful and precise.
 ```
 
 ENFP creator:
 
 ```text
-Create a square avatar of an ENFP creator as a low-poly geometric cartoon IP mascot. The character leans forward in a lively diagonal pose, holding a tiny microphone and a paper butterfly. Use sunny yellow, lime green, and teal accent polygon planes, faceted crown-like hair, simple smiling face, crisp angular vector edges, white background, and a soft grey oval ground shadow. Keep the character playful, expressive, and icon-readable.
+Create a square avatar of an ENFP creator as a low-poly geometric cartoon IP mascot. The character leans forward in a lively diagonal pose, holding one microphone close to the body, with a butterfly motif integrated into the clothing or hair instead of floating separately. Keep the full figure as one connected, cutout-friendly silhouette with official MBTI mascot-like proportions. Use sunny yellow, lime green, and teal accent polygon planes, faceted crown-like hair, simple smiling face, crisp angular vector edges, white background, and a soft grey oval ground shadow. Keep the character playful, expressive, and icon-readable.
 ```
 
 ISFJ helper:
 
 ```text
-Create a square avatar of an ISFJ helper as a low-poly geometric cartoon IP mascot. The character wears a teal nurse-inspired cap and simple faceted uniform, holding a small clipboard. Use muted teal, light cyan, soft grey, warm skin tones, flat angular polygon shading, tiny line facial details, no thick outlines, centered on white with a faint grey oval shadow. The mood is calm, reliable, and kind.
+Create a square avatar of an ISFJ helper as a low-poly geometric cartoon IP mascot. The character wears a teal nurse-inspired cap and simple faceted uniform, holding a small clipboard against the torso so the prop stays connected to the body. Keep official MBTI mascot-like proportions: controlled large faceted head, compact torso, slim angular limbs, and small wedge feet. Use muted teal, light cyan, soft grey, warm skin tones, flat angular polygon shading, tiny line facial details, no thick outlines, centered on white with a faint grey oval shadow. The mood is calm, reliable, and kind.
 ```
 
 Group scene:
@@ -182,10 +194,13 @@ Create a 4:3 low-poly geometric cartoon scene with four MBTI mascot characters g
 Before finalizing an output, verify:
 
 - The image is immediately recognizable as low-poly or faceted.
+- The character and major props form one connected, cutout-friendly silhouette.
+- The proportions match the official reference feel: controlled large head, compact torso, slim limbs, small feet.
 - The silhouette is angular and asymmetric.
 - The face is simple: eyes, nose plane, mouth line, minimal eyebrows.
 - The character uses one dominant color family with 3-5 tonal facets.
 - Props communicate personality without clutter.
+- Props are held, worn, strapped, or attached rather than scattered around the figure.
 - There is no heavy outline, painterly texture, photorealistic anatomy, or detailed environment.
 - The background is white or near-white.
 - A soft grey oval or faint floor shadow grounds the figure.
@@ -194,6 +209,8 @@ Before finalizing an output, verify:
 ## Common Failure Modes
 
 - Too round or chibi: sharpen the head, hair, clothing, hands, and feet into polygon planes.
+- Too fragmented: remove floating icons and loose props; attach symbols to clothing, hair, a handheld card, or a single prop.
+- Wrong proportions: reduce oversized heads, shorten long realistic limbs, and return to compact official MBTI mascot proportions.
 - Too realistic: flatten shading, simplify face, remove anatomy details.
 - Too busy: remove extra props, background objects, and text.
 - Too modern flat-icon: add faceted light/dark planes to clothing, hair, and props.

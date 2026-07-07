@@ -25,6 +25,8 @@ Author / 作者：公众号：科技小亮AGI
 - 单角色提示词生成：输出结构化方案、最终 prompt 和 negative prompt
 - 批量 IP 规划：先建立分类体系、主色系统、角色矩阵，再分批制作
 - 风格一致性检查：从低多边形、色彩、构图、道具、UI 可用性等角度验收
+- 抠图友好约束：角色和主要道具尽量形成一体化连贯轮廓，避免漂浮碎片和零散小元素
+- 官方比例约束：保持参考 MBTI 形象的协调比例，避免头过大、四肢过长或身体过碎
 
 ### 文件结构
 
@@ -104,6 +106,8 @@ It is useful when:
 - Single-character prompt planning: output design logic, final prompt, and negative prompt
 - Batch IP planning: create taxonomy, color systems, character matrices, and production batches
 - Style review: check low-poly geometry, color consistency, props, composition, and UI usability
+- Cutout-friendly design: keep the body and major props as one connected silhouette with minimal loose fragments
+- Official proportion control: keep the compact MBTI mascot feel instead of chibi or realistic human proportions
 
 ### Usage
 
